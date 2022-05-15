@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.mainpage{
+  background-color: rgb(231, 231, 228);
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+ 
+}
+.left1{
+float: left;
+width: 20%;
+}
+.center1{
+float: none;
+background-color: aliceblue;
+width: 60%;
+padding: 80px;
+margin: 200px;
+border: solid transparent;
+border-radius: 120px;
+
+
+}
+.center1>h1{
+  color: rgb(135, 180, 240);
+  font-size: 60px;
+  text-align: center;
+  padding-left: 70px;
+}
+.center1>a{
+  border: solid transparent;
+  border-radius: 30px;
+  background-color: rgb(135, 180, 240);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 200px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  
+}
+.center1>ul>li>span{
+  color: rgb(243, 44, 84);
+  font-weight: 600;
+}
+.center1>a:hover{
+  background-color: rgb(247, 252, 250);
+  color: rgb(23, 155, 196);
+
+}
+.center1>h4{
+  font-size: 40px;
+  padding-left: 100px;
+  color: rgb(135, 180, 240);
+}
+.center1>ul{
+list-style: none;
+font-size: 20px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+padding-left: 100px;
+color: rgb(77, 10, 136);
+}
+.center1>ul>li{
+  background: url(https://www.computerhope.com/cdn/arrow.png) no-repeat left center;
+  padding: 0 0 4px 23px;
+}
+.right1{
+  float: right;
+  width: 20%;
+}
