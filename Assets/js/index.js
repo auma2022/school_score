@@ -44,7 +44,7 @@ function score(){
    
 
     current_score.innerHTML += "<p>You have scored : " + percentage + "%</p>";    
-    kept_score.innerHTML += " <p> Evaluation: " + evaluation + "% </p>";
+    kept_score.innerHTML += " <p> Evaluation: " + evaluation + " </p>";
 
     return false;
 
