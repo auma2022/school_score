@@ -20,6 +20,15 @@ function score(){
      if(ans8 == "Brendan Eich"){a++}
       if(ans9 == ".js"){a++}
        if(ans10 == "Microsoft"){a++}
-  alert("your Score is:" + a*3)
+
+       var percentage = (a/10)*100
+  
+  var current_score = document.getElementById("current");   
+   var kept_score = document.getElementById("kept");
+
+    current_score.innerHTML += "<p>You have scored : " + percentage + "%</p>";    
+    kept_score.innerHTML += " <p> Kept Score: " + percentage + "% </p>";
+
+    return false;
 
 }
