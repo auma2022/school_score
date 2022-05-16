@@ -22,13 +22,44 @@ function score(){
        if(ans10 == "Microsoft"){a++}
 
        var percentage = (a/10)*100
+       let score = percentage
+
+       var evaluation;
+       if(score >= 70){
+         evaluation = "Excellent keep it up!"
+       }
+       else if (score >= 60){
+           evaluation = "Fairly done!"
+       }
+       else if (score >= 41 ){
+         evaluation = "You can do better!"
+       }
+       else if (score <= 40 ){
+         evaluation = "Try Again!"
+       }
+       
   
   var current_score = document.getElementById("current");   
    var kept_score = document.getElementById("kept");
+   
 
     current_score.innerHTML += "<p>You have scored : " + percentage + "%</p>";    
-    kept_score.innerHTML += " <p> Kept Score: " + percentage + "% </p>";
+    kept_score.innerHTML += " <p> Evaluation: " + evaluation + "% </p>";
 
     return false;
 
 }
+function time(){
+
+       var startTime = performance.now()
+
+          doSomething()
+
+       var endTime =performance.now()
+
+       var time_taken = document.getElementById("time");
+
+    time_taken.innerHTML +=  " <p> Time taken :${endTime - startTime} minutes </p> ";
+  }
+
+  
